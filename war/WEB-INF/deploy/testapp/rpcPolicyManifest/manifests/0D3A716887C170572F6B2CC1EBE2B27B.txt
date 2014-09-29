@@ -1,0 +1,2 @@
+serviceClass: com.utcc.testapp.client.GreetingService
+path: D0EB275DB128F7332BF16B2C0046FD9C.gwt.rpc

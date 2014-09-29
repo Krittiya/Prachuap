@@ -1,0 +1,66 @@
+
+<html>
+<head>
+    <title> Prachuap Khiri Khan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css"> 
+    <script src="phonegap.js"></script> 
+</head>
+
+ <body id="main" background = "img/b1.jpg">
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"
+                data-toggle="collapse" 
+                data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <a class="navbar-brand"><FONT COLOR =00FFFF> Prachuap Khiri Khan </FONT></a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+           
+        </div>
+    </div>
+</div>
+
+ <br> <br>
+
+  <br><br>
+     
+  <form method="get" action="chkLogin.jsp">
+        <center><div class="ui-field-contain">
+          <label for="username">ลงชื่อเข้าใช้&nbsp;:&nbsp;</label>
+          <input type="text" name="username" id="username" size="25" placeholder="">
+        </div></center>
+        
+        <center><div class="ui-field-contain">
+          <label for="password">รหัสผ่าน &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+          <input type="password" name="password" id="password" size="25" placeholder="">
+        </div></center>
+        <br>
+        <center><button type="submit" class="btn btn-primary" data-inline="true">เข้าสู่ระบบ</button></center>
+         </form>
+          
+  <footer>
+  <hr>
+  <p>&copy; Computer Science @ The University of the Thai Chamber of Commerce</p>            
+</footer>  
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function (){
+    $(".tool").tooltip();
+});
+</script>
+</body>
+</html>

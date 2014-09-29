@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#main{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: #FFFFFF;
+}
+#container{
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	margin-top: 15px;
+	max-width: 1000px;
+	background-color: #FFEFFF;
+}
+
+#footer{
+	background-color: #FFFFFF;
+	margin-top: 15px;
+}
+
+#img{
+	margin-top: 20px;
+}

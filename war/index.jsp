@@ -51,23 +51,26 @@
     </div>
 </div>
 
+ <br> <center>
+
+<font face = "Angsana New"><font size ="6"><font color = "0066CC"><b>ข่าวประชาสัมพันธ์</b></font></font></font>
+
+</center>
+
+ <br>
+ 
+<font color>
+<marquee behavior="scroll" scrolldelay="100"><div id="result"></div></marquee>
+
  <br> <br>
+
 <center>
 
          <img src="img/1.jpg" width="750" height="400" >
   
-</center>
-    <marquee>
- <br>
-                   
-      <left><font face = "Angsana New"><font size ="5"><font color = "009999">คำขวัญประจำจังหวัด &nbsp; เมืองทองเนื้อเก้า &nbsp;  มะพร้าวสัปปะรด</font></font></font></left>  
-      <left><font face = "Angsana New"><font size ="5"><font color = "009999"> &nbsp;สวยสดหาดเขาถ่ำ &nbsp; งามล้ำน้ำใจ</font></font></font></left>
-                   
-    </marquee>
-<div>
-  <center>
+ <br><br>
 
-    <li><a><img src="img/t.gif" width="100" height="100" ><br><font face = "Angsana New"><font size ="5">ตราประจำจังหวัด</br><font face = "Angsana New"><font size ="5"><font color = "333333">เป็นรูปศาลามณฑป และมีภาพเกาะอยู่เบื้องหลัง</a></li>
+    <li><a><img src="img/t.gif" width="100" height="100" ><br><font face = "Angsana New"><font size ="5"><b>ตราประจำจังหวัด</b></br><font face = "Angsana New"><font size ="5"><font color = "333333">เป็นรูปศาลามณฑป และมีภาพเกาะอยู่เบื้องหลัง</a></li>
   </center>
     <div class="col-md-4">
   <ul class="media-list">
@@ -78,10 +81,10 @@
             </div>
     </li>
   </ul>
-        <h3 align="left"><b><font face = "Angsana New"><font size ="5"></font><font color = "333333">พื้นที่ : <font color = "009999"></b>6,367.620  ตารางกิโลเมตร</font></font></h3>
-        <h3 align="left"><b><font face = "Angsana New"><font size ="5"></font><font color = "333333">ประชากร : <font color = "009999"></b>484,051 คน (2545)</font></font></h3>
-        <h3 align="left"><b><font face = "Angsana New"><font size ="5"></font><font color = "333333">การปกครอง : <font color = "009999"></b>8 อำเภอ 48 ตำบล 388 หมู่บ้าน </font></font></h3>
-        <h3 align="left"><b><font face = "Angsana New"><font size ="5"></font><font color = "333333"><font color = "009999"></b>1.อำเภอเมืองประจวบคีรีขันธ
+        <h3 align="left"><b><font face = "Angsana New"><font size ="4"></font><font color = "333333">พื้นที่ : <font color = "009999"></b>6,367.620  ตารางกิโลเมตร</font></font></h3>
+        <h3 align="left"><b><font face = "Angsana New"><font size ="4"></font><font color = "333333">ประชากร : <font color = "009999"></b>484,051 คน (2545)</font></font></h3>
+        <h3 align="left"><b><font face = "Angsana New"><font size ="4"></font><font color = "333333">การปกครอง : <font color = "009999"></b>8 อำเภอ 48 ตำบล 388 หมู่บ้าน </font></font></h3>
+        <h3 align="left"><b><font face = "Angsana New"><font size ="4"></font><font color = "333333"><font color = "009999"></b>1.อำเภอเมืองประจวบคีรีขันธ์
       <br>
       2.อำเภอกุยบุรี
       <br>
@@ -101,12 +104,22 @@
 </section>
 <footer>
   <hr>
-  </footer>  
+  </footer>  '
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function (){
     $(".tool").tooltip();
+    var xmlhttp = new XMLHttpRequest();//สร้าง object
+    xmlhttp.onreadystatechange=function(){ //จับ event พอเกิด event ให้เรียก functionไม่มีชื่อ
+    if(xmlhttp.readyState==4 && xmlhttp.status==200){
+    document.getElementById("result").innerHTML = xmlhttp.responseText;//ใช่ domเข้าถึง <div>ผ่าน ID=resultโดยต้องการเปลี่ยนค่าที่ <div>
+    }
+    }
+    var url = "loadtext.jsp";
+    //เปิด connection
+    xmlhttp.open("GET",url,true);
+    xmlhttp.send();
 });
 </script>
 </body>

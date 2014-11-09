@@ -1,2 +1,3 @@
 # Module testapp
 # RPC service class, partial path of RPC policy file
+com.utcc.testapp.client.GreetingService, D0EB275DB128F7332BF16B2C0046FD9C.gwt.rpc

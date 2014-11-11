@@ -12,8 +12,8 @@
 
 
 
- <body id="trip" background = "img/b1.jpg">
-    <div class="navbar navbar-fixed-top navbar-inverse">
+ <body id="main">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle"
@@ -23,18 +23,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
-
-            <a class="navbar-brand"><FONT COLOR =00FFFF> Prachuap Khiri Khan </FONT></a>
+ &nbsp;&nbsp;&nbsp;<a class="navbar-brand"><img src="img/Se.jpg" width="25" height="25" >
+ <FONT COLOR =888888><font size="3"> ประจวบคีรีขันธ์ </FONT></a>
         </div>
 
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="index.jsp"><img src="img/home.png" width="25" height="25" >&nbsp;หน้าแรก</a></li>
-                <li class="active"><a href="trip.jsp"><img src="img/map.png" width="25" height="25" >&nbsp;สถานที่เที่ยว</a></li>
-                <li><a><img src="img/school.png" width="25" height="25" >&nbsp;ที่พัก</a></li>
-                <li><a><img src="img/Res.png" width="25" height="25" >&nbsp;ร้านอาหาร</a></li>
-                <li><a href="name.html"><img src="img/con6.png" width="25" height="25" >&nbsp;ผู้จัดทำ</a></li>
+                <li><a href="index.jsp">&nbsp;หน้าแรก</a></li>
+                <li class="active"><a href="trip.jsp">&nbsp;สถานที่เที่ยว</a></li>
+                <li><a>&nbsp;ที่พัก</a></li>
+                <li><a>&nbsp;ร้านอาหาร</a></li>
+                <li><a href="name.html">&nbsp;ผู้จัดทำ</a></li>
                
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -50,9 +49,9 @@
         </div>
     </div>
 </div>
+</body>
 <br>
 <body>
-
 
 <div class="col-lg-12">
 			<legend><h4><b>สถานที่ท่องเที่ยว</b></h4></legend>

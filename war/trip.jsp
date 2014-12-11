@@ -13,7 +13,7 @@
 
 
  <body id="main">
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
         <div class="container" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle"
@@ -23,16 +23,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
- &nbsp;&nbsp;&nbsp;<a class="navbar-brand"><img src="img/Se.jpg" width="25" height="25" >
- <FONT COLOR =888888><font size="3"> ประจวบคีรีขันธ์ </FONT></a>
+ &nbsp;&nbsp;&nbsp;<a class="navbar-brand"><img src="img/Se.jpg" width="30" height="30" >
+ <FONT COLOR =888888><font size="3.5"> ประจวบคีรีขันธ์ </FONT></a>
         </div>
 
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.jsp">&nbsp;หน้าแรก</a></li>
                 <li class="active"><a href="trip.jsp">&nbsp;สถานที่เที่ยว</a></li>
-                <li><a>&nbsp;ที่พัก</a></li>
-                <li><a>&nbsp;ร้านอาหาร</a></li>
+                <li><a href="hostel.jsp">&nbsp;ที่พัก</a></li>
                 <li><a href="name.html">&nbsp;ผู้จัดทำ</a></li>
                
             </ul>
@@ -48,13 +47,13 @@
            </ul>
         </div>
     </div>
-</div>
-</body>
-<br>
-<body>
-
+</nav>
+<br><br><br>
+         <img src="img/pp3.jpg" width="1100" height="370" > 
+<br><br>
+<div class="jumbotron">
 <div class="col-lg-12">
-			<legend><h4><b>สถานที่ท่องเที่ยว</b></h4></legend>
+			<font color = "444444"><h3><b>สถานที่ท่องเที่ยว</b></h3></font>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
@@ -64,9 +63,11 @@
 <br>
 <div id="datalist"></div>
 </section>
+</div>
 <footer>
   <hr>
-  </footer>  
+  <font color = "444444"><p>&copy; Computer Science @ The University of the Thai Chamber of Commerce</p></font>          
+</footer> 
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
@@ -75,7 +76,6 @@ $(document).ready(function (){
    
 });
 </script>
-</div>
 </body>
 </html>
 
@@ -90,7 +90,7 @@ $(document).ready(function (){
 
 							var jsonobj = eval("(" + data + ")");
 							for (var i = 0; i < jsonobj.trip.length; i++) {
-								$("#datalist").append("<ul class=\"media-list\"><li class=\"media\"><div class=\"row\"><div class=\"col-lg-3\"><a class=\"media-left\" href=\"#\"><img src=\"img/"+jsonobj.trip[i].img+"\" alt=\"\"widht=\"150\"  HEIGHT=\"150\"></a></div><div class=\"col-lg-9\"><div class=\"media-body\"><h4 class=\"media-heading\">"+jsonobj.trip[i].head+"</h4><p>"+jsonobj.trip[i].detail+"</p></div></div></div></li></ul>");
+								$("#datalist").append("<ul class=\"media-list\"><li class=\"media\"><div class=\"row\"><div class=\"col-lg-3\"><a class=\"media-left\" href=\"#\"><img src=\"img/"+jsonobj.trip[i].img+"\" alt=\"\"widht=\"150\"  HEIGHT=\"150\"></a></div><div class=\"col-lg-9\"><div class=\"media-body\"><h4 class=\"media-heading\">"+jsonobj.trip[i].head+"</h4><h5 class=\"media-detail\"><p>"+jsonobj.trip[i].detail+"</h5></p></div></div></div></li></ul>");
 								
 							}
 						});
